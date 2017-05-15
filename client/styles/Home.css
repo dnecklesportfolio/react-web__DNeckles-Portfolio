@@ -1,0 +1,115 @@
+body {
+  
+  position:relative;
+}
+section {
+width: 100%;
+}
+
+.fullbleed {
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
+
+
+ /***
+Home Section Styles
+
+***/
+
+.home {
+  padding-top: 140px;
+}
+
+#home > .fullbleed {
+background-image: url('./_img/bg_featured_med.jpg');
+min-height: 800px;
+}
+
+.subtitle {
+	content:"Subtitle";
+ 	display: block;
+	font-family: Georgia;
+	font-size: 1.2rem; /*usually 1.2 rem*/
+	letter-spacing: .06em;
+	color: #FFF;
+	text-shadow: 2px -2px 100px #FFF, 2px -2px 50px #FFF, 2px -2px 50px #FFF, 2px -2px 50px #FFF, 1px 1px 1px #900;
+}
+
+.headline {
+ 
+	 display: block;
+    font-family: Georgia;
+    font-size: 56px; /*usually 72px*/
+    letter-spacing: .02em;
+    color: #FFF;
+    text-shadow: 2px -2px 100px #FFF, 2px -2px 50px #FFF, 1px 1px 1px #000;
+}
+
+.featured {
+  display: block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-family: GeosansLightRegular;
+    text-shadow: 2px -2px 100px #FFF, 2px -2px 50px #FFF, 2px -2px 50px #FFF, 2px -2px 50px #FFF, 1px 2px 1px #900;
+}
+
+.cta-button {
+ 
+  -moz-box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,0.7),0px 0px 7px 1px rgba(0,0,0,0.7);
+    -webkit-box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,0.7),0px 0px 7px 1px rgba(0,0,0,0.7);
+    box-shadow:inset 0px 0px 7px 1px rgba(0,0,0,0.7),0px 0px 7px 1px rgba(0,0,0,0.7);
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005688), color-stop(1, #439acc) );
+    background:-moz-linear-gradient( center top, #005688 5%, #439acc 100% );
+    background-color:#005688;
+    border:1px solid #f4a07e;
+    display:inline-block;
+    color:#ffffff;
+    font-family: "GeosansLightRegular";
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 28px;
+    margin: 17px 0px 0px 0px; 
+    text-decoration:none;
+    cursor: pointer;
+}
+
+
+
+/***
+ Project Section Styles
+
+***/
+#projects >.fullbleed {
+  background: gray;
+}
+
+
+/***
+ About Section Styles
+
+***/
+#about >.fullbleed {
+  background: black;
+}
+
+
+/***
+ Section Section Styles
+
+***/
+#projects >.fullbleed {
+  background: gray;
+}
