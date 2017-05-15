@@ -16,11 +16,6 @@ padding: 0;
 }
 
 
-
-
-
-
-
  /***
 Home Section Styles
 
@@ -88,28 +83,14 @@ min-height: 800px;
 
 
 
-/***
- Project Section Styles
-
-***/
-#projects >.fullbleed {
-  background: gray;
-}
 
 
 /***
- About Section Styles
+ Bio Section Styles
 
 ***/
-#about >.fullbleed {
+#bio >.fullbleed {
   background: black;
 }
 
-
-/***
- Section Section Styles
-
-***/
-#projects >.fullbleed {
-  background: gray;
-}
+ 

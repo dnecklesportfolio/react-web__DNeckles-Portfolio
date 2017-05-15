@@ -1,13 +1,19 @@
 import React from "react";
 var Scroll  = require('react-scroll'); 
 import HeaderStyles from './styles/Header.css';
+import FooterStyles from './styles/Footer.css';
 import HomeStyles from './styles/Home.css';
+import ProjectsStyles from './styles/Projects.css';
+import BioStyles from './styles/Bio.css';
+import { SocialIcon } from 'react-social-icons';
 
-var Link       = Scroll.Link;
-var Element    = Scroll.Element;
-var Events     = Scroll.Events;
-var scroll     = Scroll.animateScroll;
-var scrollSpy  = Scroll.scrollSpy;
+let Link       = Scroll.Link;
+let Element    = Scroll.Element;
+let Events     = Scroll.Events;
+let scroll     = Scroll.animateScroll;
+let scrollSpy  = Scroll.scrollSpy;
+
+
 
 class App extends React.Component {
   render() {
@@ -76,7 +82,7 @@ class App extends React.Component {
                   duration={500}
                   onSetActive={this.handleSetActive}
                 >
-                  About
+                 Bio
                 </Link>
                
               </div>
@@ -96,9 +102,9 @@ class App extends React.Component {
                       <p className="subtitle">Creative, Dependable,</p>
                       <p className="headline">Visionary</p>
                       <p className="featured">
-                        I’m Dwayne Neckles a banner/front-end developer currently living in New York City.
+                        I’m Dwayne Neckles a banner/front-end developer based in Brooklyn.
                         <br />
-                        I’ve had the privilege of working with agencies such as MRM, Craft/McAnn, FCB and for Brands like Disney, Virgin America & more.
+                        I’ve worked with agencies such as MRM, Craft/McAnn, FCB and for Brands like Disney, Virgin America & more.
                         <br />I'm available for hire.
                       </p>
                     
@@ -137,7 +143,7 @@ class App extends React.Component {
            </Element>
 
           <Element name="bio">
-            <section id="extra">
+            <section id="bio">
               <div className="fullbleed">
                 <div className="wrapper">
               
@@ -166,8 +172,8 @@ class App extends React.Component {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-4">
-                <p className="text-right">Portfolio of Dwayne Neckles</p>
-                <p className="text-right">
+                <p className="text-left">Portfolio of Dwayne Neckles</p>
+                <p className="text-left">
                   Copyright © 2012-2017. All Rights Reserved.
                 </p>
               </div>
@@ -184,6 +190,12 @@ class App extends React.Component {
                   </p>
                 </div>
               </div>
+                <div className="col-4 text-right">
+                  
+                  <SocialIcon url="https://github.com/dnecklesportfolio"   color="#006BA8"  style={styles} />
+                  <SocialIcon url="https://www.linkedin.com/in/dnecklesportfolio/"   color="#006BA8"  style={styles} />
+                  <SocialIcon url="http://twitter.com/dneckles"   color="#006BA8"  style={styles} />
+                </div>
             </div>
           </div>
         </footer>
@@ -192,4 +204,11 @@ class App extends React.Component {
   }
 }
 
+const styles = {
+  pointer: "cursor",
+  marginLeft:20,
+  height: 40,
+  width: 40 
+}
 export default App;
+ 
