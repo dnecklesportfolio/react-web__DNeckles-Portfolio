@@ -1,28 +1,39 @@
-
-
-
 p {
- 
- font-family: HelveticaLTStdBold, sans-serif;
-    font-size: 13px;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #005688;
     margin: 0;
+    font-size: .9em;
+}
+
+footer a {
+    color: #005688;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #1395ba;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 1s cubic-bezier(0.25, 1, 0.25, 1);
+    -moz-transition: all 1s cubic-bezier(0.25, 1, 0.25, 1);
+    -ms-transition: all 1s cubic-bezier(0.25, 1, 0.25, 1);
+    -o-transition: all 1s cubic-bezier(0.25, 1, 0.25, 1);
+    transition: all 1s cubic-bezier(0.25, 1, 0.25, 1);
 }
 
 footer {
-	content:"Footer";
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding-top: 10px;
-  width: 100%;
-  height: 60px;
-  border-top: 3px solid rgb(255, 255, 255);
-  background: rgb(217, 140, 90);
-  background: -webkit-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:    -moz-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:      -o-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:     -ms-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:         linear-gradient(180deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, .5);
+    content: "Footer";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    border-top: 3px solid rgb(255, 255, 255);
+    background: rgb(217, 140, 90);
+    background: -webkit-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
+    background: -moz-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
+    background: -o-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
+    background: -ms-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
+    background: linear-gradient(180deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .5);
 }

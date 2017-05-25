@@ -2,6 +2,86 @@
  Project Section Styles
 
 ***/
-#projects >.fullbleed {
-  background: gray;
+
+#projects>.fullbleed {
+    display: flex;
+    flex-direction: column;
+    height: 682px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#909b9e+0,5d686b+100 */
+    background: #909b9e;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #909b9e 0%, #5d686b 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #909b9e 0%, #5d686b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #909b9e 0%, #5d686b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#636a6c', endColorstr='#5d686b', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+#projects h2 {
+    font-family: 'Goudy-Old-Style';
+    font-size: 56px;
+    /*usually 72px*/
+    letter-spacing: .02em;
+    color: #FFF;
+    text-shadow: 2px -2px 100px #FFF, 2px -2px 50px #FFF, 1px 1px 1px #000;
+    margin-left: 0;
+}
+
+#projects .wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 2px solid white;*/
+    height: 100%;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /*border: 2px solid white;*/
+}
+
+#projects .row {
+    padding-top: 200px;
+}
+
+#projects p {
+    color: #e4e4e4;
+    font-family: Arial, sans-serif;
+    display: block;
+    font-size: .9em;
+    letter-spacing: 1.2px;
+    line-height: 13.4pt;
+}
+
+#projects li {
+    list-style: none;
+    font-family: 'Goudy-Old-Style';
+    font-size: 12px;
+    color: #838C93;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+#projects a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    color: #fff;
+}
+
+#projects a:visited {
+    color: #fff;
 }

@@ -1,27 +1,110 @@
+/***
+ Bio Section Styles
 
+***/
 
-
-p {
- 
- font-family: HelveticaLTStdBold, sans-serif;
-    font-size: 13px;
-    color: #005688;
-    margin: 0;
+#bio>.fullbleed {
+    background: black;
+    height: auto;
 }
 
-footer {
-	content:"Footer";
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  border-top: 3px solid rgb(255, 255, 255);
-  background: rgb(217, 140, 90);
-  background: -webkit-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:    -moz-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:      -o-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:     -ms-linear-gradient(270deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  background:         linear-gradient(180deg, rgb(217, 140, 90) 0%, rgb(237, 179, 142) 100%) #f9f2ee;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, .5);
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#bio .headline {
+    margin-left: 0px;
+}
+
+#bio h2.headline,
+#bio h3 {
+    display: block;
+    font-family: 'Goudy-Old-Style';
+    font-size: 56px;
+    /*usually 72px*/
+    letter-spacing: .02em;
+    color: #FFF;
+    text-shadow: 2px -2px 100px rgba(255, 255, 255, 0.5), 2px -2px 50px rgba(255, 255, 255, 0.5), 1px 1px 1px #000;
+}
+
+#bio .row {
+    padding-top: 100px;
+    padding-bottom: 170px;
+}
+
+@media (min-width: 576px) {
+    #bio .row {
+        padding-bottom: 180px;
+    }
+}
+
+@media (min-width: 768px) {
+    #bio .row {
+        padding-top: 210px;
+        padding-bottom: 280px;
+    }
+}
+
+#bio .pic {
+    width: 163px;
+    height: 207px;
+    margin-left: 10px;
+}
+
+#bio .cta-button {
+    width: 110px;
+}
+
+#bio p {
+    color: #c1c7c9;
+    font-family: Arial, sans-serif;
+    display: block;
+    font-size: .9em;
+    letter-spacing: 1.2px;
+    line-height: 13.4pt;
+}
+
+#bio .main-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bio .ctas {
+    display: flex;
+    flex-direction: row;
+}
+
+#bio .sidebar ul {
+    padding-left: 20px;
+    padding-top: 10px;
+    background-image: url("./_img/flag.png");
+    background-repeat: none;
+    background-repeat: no-repeat;
+    font-size: .9em;
+    list-style: none;
+}
+
+#bio h3 {
+    color: #005688;
+    margin-left: 20px;
+    font-size: 1.4rem;
+}
+
+.main ul>li {
+    color: #c1c7c9;
+    font-size: .9em;
+}
+
+.sidebar ul>li {
+    color: white;
+}
+
+.sidebar ul>li:nth-child(even) {
+    color: #edb38e;
+    margin-bottom: 5px;
 }
