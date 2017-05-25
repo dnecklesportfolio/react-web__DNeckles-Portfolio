@@ -30,28 +30,16 @@ class App extends React.Component {
             id="navbar-site"
             className="navbar fixed-top navbar-inverse navbar-toggleable-sm"
           >
-            <div className="container">
-              <button
-                className="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target="#myContent"
-                aria-controls="myContent"
-                aria-expanded="false"
-                aria-label="Toggle Navigation"
-              >
+            <div className="container align-center">
+              
+              <a  className="header__brand"> </a>
 
-                <span className="navbar-toggler-icon" />
-              </button>
-
-              <a href="" className="navbar-brand header__brand"> </a>
-
-              <div className="pt-4 collapse navbar-collapse" id="myContent">
-                <div className="navbar-nav ml-auto">
+              <div className="nav-links">
+                <div className="">
 
                   <Link
-                    className="nav-item nav-link"
-                    activeClass="active"
+                    className="nav-link-item"
+                    activeClass="nav-link-item-active"
                     to="home"
                     spy={true}
                     smooth="easeInOutQuint"
@@ -62,8 +50,8 @@ class App extends React.Component {
                     Home
                   </Link>
                   <Link
-                    className="nav-item nav-link nav-disabled"
-                    activeClass="active"
+                    className="nav-link-item"
+                    activeClass="nav-link-item-active"
                     to="projects"
                     spy={true}
                     smooth="easeInOutQuint"
@@ -74,19 +62,21 @@ class App extends React.Component {
                     Projects
                     
                   </Link>
+                  
                   <Link
-                    className="nav-item nav-link"
-                    activeClass="active"
+                    className="nav-link-item"
+                    activeClass=""
                     to="bio"
                     spy={true}
                     smooth="easeInOutQuint"
-                    offset={50}
+                    offset={0}
                     duration={500}
                     onSetActive={this.handleSetActive}
                   >
                     Bio
                   </Link>
-
+                 
+                  <a alt="Resume Download" className="nav-link-item" href="http://www.dnecklesportfolio.com/DNeckles_Resume_May2017.doc">Resume</a>
                 </div>
 
               </div>
@@ -143,9 +133,9 @@ class App extends React.Component {
 
                       <h2 className="headline">Projects</h2>
                       <p>
-                            Project descriptions and details will go here.
+                            Project descriptions and details will soon here.
                             <br />
-                            For now to see code samples, please visit the github account at the link below.
+                            For now to see the code samples, please visit the github account at the link below. Thanks for your patience.
                             <br />
                             {" "}
                           </p>
@@ -157,7 +147,13 @@ class App extends React.Component {
                           >
                             Github
                           </a>
-                       
+                        <a
+                            to="http://www.dnecklesportfolio.com/banners"
+                            className="cta-button"
+                            role="button"
+                          >
+                           Banner
+                          </a>
 
                
                   </div>
@@ -180,7 +176,7 @@ class App extends React.Component {
                           <p>
                             Dwayne brings five years experience creating banners in HTML5 and Javascript, using Greensock Animation Library. He has ten years of consumer and pharmaceutical advertising industry. With his experience working with interactive banner ads, websites and conference panels, he is seeking mid-level, front-end development role using ReactJS.
                           </p><br />
-                          <p>He has:</p>
+                          <p>Highlights of his related skills include:</p>
                           <ul>
                             <li>Familiarity with Object Oriented JS </li>
                             <li>
@@ -189,7 +185,7 @@ class App extends React.Component {
                             <li>
                               Experience taking a Photoshop design<br/>and coding it to HTML
                             </li>
-                            <li>Solid knowledge of GreenSock JS techniques</li> 
+                            <li>Can interact with marketing, developers, project managers and QA alike</li> 
                             <li>
                               {" "}
                               Banner work recognized <br/>with Honorable Mentions and Awards at  Cannes Lions et al

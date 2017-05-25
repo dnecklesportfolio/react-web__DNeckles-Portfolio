@@ -33,12 +33,12 @@
 
 #bio .row {
     padding-top: 100px;
-    padding-bottom: 170px;
+    padding-bottom: 200px;
 }
 
 @media (min-width: 576px) {
     #bio .row {
-        padding-bottom: 180px;
+        padding-bottom: 280px;
     }
 }
 
@@ -80,6 +80,7 @@
 }
 
 #bio .sidebar ul {
+    font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
     padding-top: 10px;
     background-image: url("./_img/flag.png");
@@ -96,12 +97,18 @@
 }
 
 .main ul>li {
+    font-family: Arial, Helvetica, sans-serif;
     color: #c1c7c9;
     font-size: .9em;
+    letter-spacing: 1.2px;
+    line-height: 13.4pt;
 }
 
 .sidebar ul>li {
     color: white;
+    font-size: .9em;
+    letter-spacing: 1.2px;
+    line-height: 13.4pt;
 }
 
 .sidebar ul>li:nth-child(even) {

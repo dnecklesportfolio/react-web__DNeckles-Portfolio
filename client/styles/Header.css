@@ -77,13 +77,38 @@
       pointer-events: all;
       width: 650px;
       height: 66px;
-      background: url("./_img/logo.png") no-repeat;
+      /*background: url("./_img/logo.png") no-repeat;*/
       flex: 0 1 auto;
       background: url('./_img/logo_uncropped.png') no-repeat;
-      width: 355px;
+      width: 275px;
       /* 202 295-257=38 */
       height: 66px;
-      margin-left: -40px;
+  }
+  
+  .align-center {
+      text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+      .align-center {
+          text-align: left;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      .header__brand {
+          display: inline-block;
+          pointer-events: all;
+          width: 650px;
+          height: 66px;
+          background: url("./_img/logo.png") no-repeat;
+          flex: 0 1 auto;
+          background: url('./_img/logo_uncropped.png') no-repeat;
+          width: 355px;
+          /* 202 295-257=38 */
+          height: 66px;
+          margin-left: -40px;
+      }
   }
   
   .header__nav {
@@ -95,68 +120,99 @@
       align-items: center;
   }
   
+  .nav-links {
+      text-align: center;
+      font-weight: bolder;
+  }
+  
+  @media (min-width: 768px) {
+      .nav-links {
+          text-align: right;
+          font-weight: bolder;
+          margin-left: auto;
+      }
+  }
+  
   .navbar {
       padding-top: 0;
   }
-  /* .NavLink {
-
-    display:block;
-    color: white;
-    text-decoration: none;
-    text-shadow:0 0 0 #ffffff, 0 0 1px transparent;
-    padding: 10px 4px;
-    font-size: 15px;
-    font-family: 'GeosansLightRegular'; 
-}
-
-.MobileMenuIcon {
-  width: 32px;
-height: 32px;
-background: url('./_img/icon_menu.svg') no-repeat 0 0;
-background-size:contain;
-position: absolute;
-top:22px;
-left: 50%;
-margin-left:-16px;
-}
-
-li {
-  content:"Li";
-display:inline-block;
-}
- 
-.menu-toggle {
-        width: 40px;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    cursor: pointer;
-    right: 20px;
-    z-index: 10;
-}
-nav { 
-width: 100%;
-margin-top:15px;
-}
-nav ul {
-  list-style: none;
-  margin-left: 0px;
- text-align:center;
-}
- 
-nav ul li{
-    background-color: rgba(0,0,0,.8);
-}
-
-.NavLink {
-     display:block;
-    color: white;
-    text-decoration: none;
-    text-shadow:0 0 0 #ffffff, 0 0 1px transparent;
-    padding: 30px 4px;
-    font-size: 25px;
-    font-family: 'GeosansLightRegular'; 
-}
-
- 
-*/
+  
+  .nav-link-item-active {
+      /*color: #014c8c;*/
+  }
+  
+  .nav-link-item {
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      /*text-shadow: 0 0 0 #ffffff, 0 0 1px transparent;*/
+      padding: 20px 15px;
+      /*background-color: blue;*/
+      margin: 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-family: 'GeosansLightRegular';
+  }
+  
+  a.nav-link-item:hover {
+      text-decoration: none;
+      color: white;
+  }
+  
+  a.nav-link-item:not([href]):not([tabindex]) {
+      color: white;
+      text-decoration: none;
+  }
+  /*
+  .MobileMenuIcon {
+      width: 32px;
+      height: 32px;
+      background: url('./_img/icon_menu.svg') no-repeat 0 0;
+      background-size: contain;
+      position: absolute;
+      top: 22px;
+      left: 50%;
+      margin-left: -16px;
+  }
+  
+  li {
+      content: "Li";
+      display: inline-block;
+  }
+  
+  .menu-toggle {
+      width: 40px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+      right: 20px;
+      z-index: 10;
+  }
+  
+  nav {
+      width: 100%;
+      margin-top: 15px;
+  }
+  
+  nav ul {
+      list-style: none;
+      margin-left: 0px;
+      text-align: center;
+  }
+  
+  nav ul li {
+      background-color: rgba(0, 0, 0, .8);
+  }
+  
+  .NavLink {
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-shadow: 0 0 0 #ffffff, 0 0 1px transparent;
+      padding: 30px 4px;
+      font-size: 25px;
+      font-family: 'GeosansLightRegular';
+  }
+  
+  */
