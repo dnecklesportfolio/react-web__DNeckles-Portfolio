@@ -40,7 +40,7 @@ section {
 
 
 /***
-Home Section Styles
+Home Section assets
 
 ***/
 
@@ -49,7 +49,7 @@ Home Section Styles
 }
 
 #home>.fullbleed {
-    background-image: url('../../styles/_img/bg_featured_med.jpg');
+    background-image: url('../../assets/_img/bg_featured_med.jpg');
     min-height: 800px;
 }
 

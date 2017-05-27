@@ -12,7 +12,6 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: './index.js',
-  
   output: {
     path: path.resolve('dist'),
     filename: 'index_bundle.js'
@@ -33,6 +32,15 @@ module.exports = {
         limit: 25000,
       }}
     ]
+  },
+  resolve: {
+  // options for resolving module requests
+  // (does not apply to resolving to loaders)
+
+  modules: [
+    "node_modules",
+    path.resolve(__dirname, "src")
+  ]
   },
 // add this line
 plugins: [HtmlWebpackPluginConfig]

@@ -1,36 +1,41 @@
 import React from "react";
 import Scroll from 'react-scroll';
+import styled from 'styled-components';
+import 'theme/globalStyles';
 
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Home from "../../containers/Home/Home";
+import Bio from "../../containers/Bio/Bio";
+import Projects from "../../containers/Projects/Projects";
 
-import Home from "./containers/Home/Home"
-import Bio from "./containers/Bio/Bio"
-import Projects from "./containers/Projects/Projects"
+import { Container } from 'theme/Grid';
+import AppStyle from './AppStyle';
 
-let Link = Scroll.Link;
-let Element = Scroll.Element;
-let Events = Scroll.Events;
+// add div no need for fullbleed
+const Link = Scroll.Link;
+const Element = Scroll.Element;
+const Events = Scroll.Events;
 
-let scrollSpy = Scroll.scrollSpy;
+const scrollSpy = Scroll.scrollSpy;
 
 class App extends React.Component {
   render() {
     return (
       <div>
+      <Header/>
         <div className="Frame">
           <span className="Frame__SideBars"> </span>
           <span className="Frame__TopBar"> </span>
-          <Header/>
         </div>
         <div>
 
           <section id="home">
             <div className="fullbleed">
-              <div className="container">
+              <Container>
                 <Home/>
+              </Container>
               </div>
-            </div>
           </section>
 
           <Element name="projects">
