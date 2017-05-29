@@ -21,5 +21,6 @@ injectGlobal`
       font-family: Arial, "Lucida Grande", sans-serif;
       font-size: 16px;
       line-height: 1.1;
+      position: relative;
   }
 `;

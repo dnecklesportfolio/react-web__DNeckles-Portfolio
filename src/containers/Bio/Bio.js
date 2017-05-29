@@ -1,9 +1,24 @@
 import React, { Component } from 'react';
+import styled from "styled-components";
+import { Container } from "theme/Grid";
 import "./Bio.css"
+
+export const FullWidthBg = styled.div`
+     width: 100%;
+     height: 100vh;
+     margin: 0;
+     padding: 0;
+    background: black;
+    height: auto;
+    min-height: 800px;
+`;
+
+
 class Bio extends Component {
   render() {
     return (
-    <div className="container">
+      <FullWidthBg>
+           <Container>
                   <div className="row d-flex">
         <div className="p-2 col-sm-12 col-md-8">
                       <div className="main">
@@ -55,7 +70,8 @@ class Bio extends Component {
                         </div>
                       </div>
       </div>
-      </div>
+             </Container>
+             </FullWidthBg>
     );
   }
 }
